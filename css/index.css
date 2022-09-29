@@ -233,6 +233,7 @@ dashboard-container
   display: grid;
   grid-template-columns: 192px 192px 192px;
   gap: 2%;
+  margin: 1rem 0.5rem;
 }
 .dp__container-box {
   border: 1px solid white;
@@ -264,7 +265,33 @@ dashboard-container
 
   border-radius: 4px;
 }
-
+.section__grid-flex1 .create__dp-box {
+  width: 218px;
+  height: 167px;
+  background: linear-gradient(
+    94.58deg,
+    rgba(247, 197, 248, 0.138) 1.24%,
+    rgba(254, 211, 255, 0.3) 1.25%,
+    rgba(250, 199, 251, 0.3) 98.94%
+  );
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 4px;
+  margin: 0.7rem 0;
+}
+.section-wrapper__grid2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-wrapper__grid2 .section__grid-flex1:first-child{
+  flex-basis: 70%!important;
+  /* background-color: red; */
+}
+.section-wrapper__grid2 .section__grid-flex1:last-child{
+  flex-basis: 29%;
+  /* background-color: gold; */
+}
 /*************************
  Tablet Device
 **************************/
@@ -287,25 +314,7 @@ dashboard-container
     flex: 1 1 48%;
   }
 }
-.section__grid-flex1 .create__dp-box {
-  width: 218px;
-  height: 167px;
-  background: linear-gradient(
-    94.58deg,
-    rgba(247, 197, 248, 0.138) 1.24%,
-    rgba(254, 211, 255, 0.3) 1.25%,
-    rgba(250, 199, 251, 0.3) 98.94%
-  );
-  backdrop-filter: blur(30px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 4px;
-  margin: 0.7rem 0;
-}
-.section-wrapper__grid2{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 /*************************
  Desktop device
 **************************/
@@ -332,3 +341,38 @@ dashboard-container
     flex: 0 0 22%;
   }
 }
+ @media (max-width:1050px) {
+  .section-wrapper__grid1{
+    display: none;
+  }
+  .section-wrapper__grid{
+    grid-template-columns: 1fr;
+  }
+  .dp__container-mainbox{
+    width: 100%;
+    margin: 1rem auto;
+  }
+ .dp__container{
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+  .dp__container-box{
+    flex-basis: 70%;
+    /* width: 100px; */
+  }
+  .create__dp-box{
+    width: 80%!important;
+    margin: 1rem auto!important;
+  }
+ }
+
+ @media (max-width:550px) {
+  .section-wrapper__grid2 .section__grid-flex1:first-child{
+    flex:1;
+    padding: 1rem;
+    /* background-color: red; */
+  }
+  .section-wrapper__grid2 .section__grid-flex1:last-child{
+    display: none;
+    /* background-color: gold; */
+  }
+ }
