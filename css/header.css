@@ -4,6 +4,9 @@ background:url("../images/headerbg-image.png") right top / cover no-repeat #0102
 .header-wrapper.index-page{
 padding:0;
 }
+.header-wrapper.dashboard-page{
+    padding:0 0 1rem;
+}
 .navigation-container{
 padding:0rem 0rem;
 position:relative;
