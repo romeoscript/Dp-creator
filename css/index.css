@@ -251,6 +251,7 @@ dashboard-container
   border-radius: 4px;
 }
 .dp__container-mainbox {
+  position: relative;
   margin: 1rem 0;
   width: 614px;
   height: 398px;
@@ -265,6 +266,7 @@ dashboard-container
 
   border-radius: 4px;
 }
+
 .section__grid-flex1 .create__dp-box {
   width: 218px;
   height: 167px;
@@ -291,6 +293,17 @@ dashboard-container
 .section-wrapper__grid2 .section__grid-flex1:last-child{
   flex-basis: 29%;
   /* background-color: gold; */
+}
+.button__create{
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  display: none;
 }
 /*************************
  Tablet Device
@@ -371,8 +384,69 @@ dashboard-container
     padding: 1rem;
     /* background-color: red; */
   }
+  .section-wrapper__grid2{
+    display: block;
+  }
   .section-wrapper__grid2 .section__grid-flex1:last-child{
     display: none;
     /* background-color: gold; */
+  }
+  .mainbox{
+    display: grid!important;
+    position: absolute;
+    background: darkgrey;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    position: fixed;
+    width: 80%;
+    top: 10%;
+    z-index: 60;
+    border-radius:10px ;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    /* transform: translate(-50% -50%); */
+  }
+  .backdrop{
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    visibility:hidden ;
+    top: 0;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .backdropFilter{
+    display: block;
+    visibility: visible;
+  }
+  
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.button__create{
+  display: block;
+}
+  .create__dp-box{
+    width: auto;
   }
  }
