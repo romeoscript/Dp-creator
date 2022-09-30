@@ -315,51 +315,77 @@ dashboard-container
   display: none;
   visibility: hidden;
 }
- .chevy1{
+.chevy1 {
   transform: rotate(90deg);
   transition: all 1s ease;
 }
 .aside1 {
-  padding:0.4rem 1rem;
+  padding: 0.4rem 1rem;
   display: block;
   visibility: visible;
-  -webkit-animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes scale-in-top {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
 }
 @keyframes scale-in-top {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
 }
+.alldp__table {
+  width: 90%;
+  margin: auto;
+}
+.alldp__table,
+.alldp__table td,
+.alldp__table th {
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  border-collapse: collapse;
+}
+.alldp__table th {
+  background: linear-gradient(
+    278.24deg,
+    rgba(254, 211, 255, 0.3) 0.82%,
+    rgba(247, 197, 248, 0.138) 98.49%,
+    rgba(250, 199, 251, 0.3) 100%
+  );
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
 
+  border-radius: 4px;
+}
+.dashb__main{
 
+    background: url(../images/headerbg-image.png) 2px  / cover no-repeat #010930
+}
 /*************************
  Tablet Device
 **************************/
@@ -505,5 +531,31 @@ dashboard-container
   }
   .create__dp-box {
     width: auto;
+  }
+  .alldp__table thead{
+    display: none;
+  }
+  .alldp__table, .alldp__table tbody, .alldp__table tr, .alldp__table td{
+    display: block;
+    width: 100%;
+  }
+  .alldp__table tr{
+    margin-bottom: 15px;
+  }
+
+  .alldp__table td{
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .alldp__table td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
   }
 }

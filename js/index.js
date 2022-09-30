@@ -1,9 +1,10 @@
+
 let mainBox = document.querySelector('.viewed__dp')
 let showBox = document.querySelector('.button__create')
 let backDrop = document.querySelector('.backdrop')
-let displayUl = document.querySelector('.displayUL')
-let mainAside = document.querySelector('.mainaside')
-let chevy = document.querySelector('.chevy')
+let displayUls = document.querySelectorAll('.displayUL')
+let mainAsides = document.querySelectorAll('.mainaside')
+let chevys = document.querySelectorAll('.chevy')
 
 showBox.addEventListener('click',()=>{
     mainBox.classList.add('mainbox')
@@ -16,9 +17,15 @@ backDrop.addEventListener('click',()=>{
     
 })
 
-displayUl.addEventListener('click',()=>{
-    mainAside.classList.toggle('aside1')
-    chevy.classList.toggle('chevy1')
+displayUls.forEach(displayUl=>{
+    displayUl.addEventListener('click',()=>{
+       mainAsides.forEach(mainAside =>{
+        mainAside.classList.toggle('aside1')
+        chevys.forEach(chevy =>{
+            chevy.classList.toggle('chevy1')
+        })
+       })
+    })
 })
 
 
