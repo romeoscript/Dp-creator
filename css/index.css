@@ -365,6 +365,7 @@ dashboard-container
 .alldp__table,
 .alldp__table td,
 .alldp__table th {
+  padding: 0.5rem;
   border: 2px solid white;
   text-align: center;
   color: white;
@@ -532,30 +533,8 @@ dashboard-container
   .create__dp-box {
     width: auto;
   }
-  .alldp__table thead{
-    display: none;
-  }
-  .alldp__table, .alldp__table tbody, .alldp__table tr, .alldp__table td{
-    display: block;
-    width: 100%;
-  }
-  .alldp__table tr{
-    margin-bottom: 15px;
-  }
-
-  .alldp__table td{
-    text-align: right;
-    padding-left: 50%;
-    position: relative;
-  }
-  .alldp__table td::before{
-    content: attr(data-label);
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 15px;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: left;
-  }
+ .alldp{
+  overflow-x: auto;
+  margin: 0.7rem ;
+ }
 }
