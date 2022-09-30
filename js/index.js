@@ -20,3 +20,17 @@ displayUl.addEventListener('click',()=>{
     mainAside.classList.toggle('aside1')
     chevy.classList.toggle('chevy1')
 })
+
+
+// show userinformation
+const loggedIn = document.querySelector('.logged__in')
+let logged = document.querySelector('.logged__out')
+console.log(logged)
+console.log(loggedIn)
+
+loggedIn.addEventListener('mouseover',()=>{
+    logged.classList.add('no_display')
+})
+loggedIn.addEventListener('mouseout',()=>{
+    logged.classList.remove('no_display')
+})
