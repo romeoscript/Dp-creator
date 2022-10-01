@@ -383,9 +383,180 @@ dashboard-container
 
   border-radius: 4px;
 }
-.dashb__main{
+.dashb__main {
+  background: url(../images/headerbg-image.png) 2px / cover no-repeat #010930;
+}
+.create__dp-container {
+  padding: 0 1rem;
+}
+.create__dp-container button {
+  width: 117px;
+  height: 44px;
+  left: 1001px;
+  top: 1069px;
+  border: none;
+  outline: none;
+  margin: 1rem;
+  cursor: pointer;
+  background: #da00de;
+  box-shadow: 0px 4px 18px -1px rgba(12, 5, 14, 0.72);
+  border-radius: 10px;
+}
+.create__dp-nav__section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(
+    278.24deg,
+    rgba(254, 211, 255, 0.3) 0.82%,
+    rgba(247, 197, 248, 0.138) 98.49%,
+    rgba(250, 199, 251, 0.3) 100%
+  );
+  backdrop-filter: blur(30px);
+  /* padding: 0.5rem 0.1rem; */
+  border-radius: 4px;
+}
+.create__dp-section h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+  margin: 0 1rem;
 
-    background: url(../images/headerbg-image.png) 2px  / cover no-repeat #010930
+  color: #e4e4e4;
+}
+.create__dp-nav__section li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  /* or 17px */
+
+  color: #e4e4e4;
+}
+.create__dp-nav__section li:hover {
+  background: rgba(217, 217, 217, 0.34);
+  border-radius: 5px 0px 0px 5px;
+}
+.create__dp-container form label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+
+  color: #ffe8ff;
+
+  backdrop-filter: blur(30px);
+}
+.create__dp-container form input,
+.select select {
+  background: linear-gradient(
+    278.24deg,
+    rgba(254, 211, 255, 0.3) 0.82%,
+    rgba(247, 197, 248, 0.138) 98.49%,
+    rgba(250, 199, 251, 0.3) 100%
+  );
+  color: white;
+  width: 100%;
+  outline: none;
+  border: none;
+  min-height: 40px;
+  padding: 0 0.5rem;
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 4px;
+}
+
+.uploadedfile {
+  width: 80%;
+  height: 150px;
+  border: 2px solid black;
+  display: block;
+  background: linear-gradient(
+    278.24deg,
+    rgba(254, 211, 255, 0.3) 0.82%,
+    rgba(247, 197, 248, 0.138) 98.49%,
+    rgba(250, 199, 251, 0.3) 100%
+  );
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 4px;
+}
+.file__upload {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.file__upload-content1,
+.file__upload-content {
+  flex-basis: 49%;
+}
+.file__upload-content1 progress {
+  width: 100%;
+  min-height: 32px;
+  background: linear-gradient(
+    278.24deg,
+    rgba(254, 211, 255, 0.3) 0.82%,
+    rgba(247, 197, 248, 0.138) 98.49%,
+    rgba(250, 199, 251, 0.3) 100%
+  );
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+  -webkit-appearance: none;
+  border-radius: 4px;
+}
+.file__upload-content1 p {
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+}
+.file__upload-content1 progress::-webkit-progress-bar {
+  width: 100%;
+  min-height: 32px;
+  background: linear-gradient(
+    278.24deg,
+    rgba(254, 211, 255, 0.3) 0.82%,
+    rgba(247, 197, 248, 0.138) 98.49%,
+    rgba(250, 199, 251, 0.3) 100%
+  );
+  backdrop-filter: blur(30px);
+}
+.file__upload-content1 progress::-webkit-progress-value {
+  width: 100%;
+  min-height: 32px;
+  background: rgba(245, 90, 249, 0.78);
+  border-radius: 5px;
+}
+.ckedtor {
+  height: 180px;
+  overflow: hidden;
+  background-color: black;
+}
+.cke_top {
+  border-bottom: 1px solid #d1d1d1;
+  background: rgb(212, 177, 212) !important;
+  color: white !important;
+  padding: 6px 8px 2px;
+  white-space: normal;
+  height: 30px !important;
+}
+.cke_editable {
+  cursor: text;
+  background: green !important;
 }
 /*************************
  Tablet Device
@@ -439,10 +610,13 @@ dashboard-container
 @media (max-width: 1050px) {
   .section-wrapper__grid1 {
     display: none;
+   
   }
   .section-wrapper__grid {
-    grid-template-columns: 1fr;
+   display: block;
+   margin: 0;
   }
+ 
   .dp__container-mainbox {
     width: 100%;
     margin: 1rem auto;
@@ -533,8 +707,20 @@ dashboard-container
   .create__dp-box {
     width: auto;
   }
- .alldp{
-  overflow-x: auto;
-  margin: 0.7rem ;
- }
+  .alldp {
+    overflow-x: auto;
+    margin: 0.7rem;
+  }
+  .file__upload {
+    display: block;
+}
+.file__upload-content1 p {
+  font-size: 12px;
+  line-height: 100%;
+}
+.create__dp-nav__section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 }

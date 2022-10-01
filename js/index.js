@@ -41,3 +41,23 @@ loggedIn.addEventListener('mouseover',()=>{
 loggedIn.addEventListener('mouseout',()=>{
     logged.classList.remove('no_display')
 })
+
+// progressbar
+let uplaod = document.getElementById('uploaded')
+let progess = document.getElementById('progress')
+let load = 0;
+let process = '';
+
+uplaod.oninput = ({target})=>{
+    // let filename =uplaod.files[0].name;
+    // let extension = filename.split('.').pop();
+    // let filesize = uplaod.files[0].size
+    let file = target.files[0]
+    if(file){
+        let filename = file.name
+        uploadFile(filename)
+    }
+}
+function uploadFile(name){
+    let xhr = newX
+}
