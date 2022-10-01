@@ -480,6 +480,7 @@ dashboard-container
 .uploadedfile {
   width: 80%;
   height: 150px;
+  cursor: pointer;
   border: 2px solid black;
   display: block;
   background: linear-gradient(
@@ -515,6 +516,24 @@ dashboard-container
   /* Note: backdrop-filter has minimal browser support */
   -webkit-appearance: none;
   border-radius: 4px;
+}
+.clickupload {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.clickupload svg {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  width: 36px;
+  line-height: 120%;
+  display: block;
+  /* identical to box height, or 58px */
+
+  color: #ffffff;
 }
 .file__upload-content1 p {
   color: white;
@@ -610,13 +629,12 @@ dashboard-container
 @media (max-width: 1050px) {
   .section-wrapper__grid1 {
     display: none;
-   
   }
   .section-wrapper__grid {
-   display: block;
-   margin: 0;
+    display: block;
+    margin: 0;
   }
- 
+
   .dp__container-mainbox {
     width: 100%;
     margin: 1rem auto;
@@ -713,14 +731,14 @@ dashboard-container
   }
   .file__upload {
     display: block;
-}
-.file__upload-content1 p {
-  font-size: 12px;
-  line-height: 100%;
-}
-.create__dp-nav__section {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  }
+  .file__upload-content1 p {
+    font-size: 12px;
+    line-height: 100%;
+  }
+  .create__dp-nav__section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
