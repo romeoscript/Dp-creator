@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/huloex-logo.png" type="image/icon"/>
+    <link href="./font-awesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <title>set avatar</title>
+   
+</head>
+<body onload="move('dragable')">
+	
+<header class="header-wrapper dashboard-page">
+	<div class="site-header">
+		<div class="navigation-container main-nav">
+		<div class="bar-btn">&#9776;</div>
+			<nav>
+				<ul class="nav-menu">
+					<li><a href="./index.html">Create Flyer</a></li>
+					<li><a href="./trending.html">Trending</a></li>
+					<li><a href="./categories.html">Categories</a></li>
+					<li><a href="./createdp.html">Create DP flyer</a></li>
+					
+				</ul>
+				
+					<h4 class="logged__in">Chinonso<i class="fa fa-chevron-right " style="font-size: 90%; margin:auto; margin-left: 0.3rem;" aria-hidden="true"></i>
+						<ul class="logged__out">
+							<li>dashboard</li>
+							<ul class="displayUL" style="padding: 0;border:none;margin: 0; height: auto;">
+								<li>DP banners <i class="fa fa-chevron-right chevy" aria-hidden="true" style="margin-left: 1rem;"></i></li> 
+								<aside class="mainaside">
+									<li>All My Dp</li>
+									<li>Create</li>
+								</aside>
+							</ul>
+							<li>My profile</li>
+							<li>Settings</li>
+							<li>Logout</li>
+						</ul>
+					</h4>
+				
+			</nav>
+		</div>
+		
+		
+
+</div>
+<div class="backdrop"></div>
+</header>
+<main class="dashb__main">
+    <div class="section-wrapper__grid " id="steady" style="height: auto;">
+        <div class="section-wrapper__grid1">
+            <ul>
+                <li>dashboard</li>
+                <ul class="displayUL" style="padding: 0;border:none;margin: 0; height: auto;">
+                    <li>DP banners <i class="fa fa-chevron-right chevy" aria-hidden="true" style="margin-left: 1.6rem;"></i></li> 
+                    <aside class="mainaside">
+                        <li>All My Dp</li>
+                        <li>Create</li>
+                    </aside>
+                </ul>
+                <li>My profile</li>
+                <li>Settings</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+    <button type="button" class="button__create" style="display: none;">Create</button>
+    
+   <div class="create__dp-section">
+    <h2>create DP</h2>
+    <section class="create__dp-container">
+        <ol class="create__dp-nav__section">
+            <li>basic information</li>
+            <li>set avatar location</li>
+            <li>set name preferance</li>
+            <li>preview and publish</li>
+        </ol>
+           
+          <div class="flier__container">
+            <div class="image_preview dragable" >
+                <img src="./images/final.png" alt="">
+                <div class="image__inspect" id="dragable">
+                    <img src="./images/inspect.png" alt="">
+                    <img src="./images/inspect1.png" alt="">
+                    <img src="./images/inspect2.png" alt="">
+                </div>
+            </div>
+          </div>
+    </section>
+   </div>
+        
+</main>
+<footer class="footer-wrapper index-page">
+	<div class="footer-nav-container">
+		<nav>
+			<ul class="flex-center footer-flex">
+				<li><a href="#">site map</a></li>
+				<li><a href="#">site map</a></li>
+				<li><a href="#">site map</a></li>
+				<li><a href="#">site map</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+<script src="./js/header.js"></script>
+<script src="./js/index.js"></script>
+
+<script>
+   var dragValue;
+   function move(id){
+    let element = document.getElementById('dragable')
+    element.style.position = 'absolute'
+    element.onmousedown = function(){
+        dragValue = element
+    }
+   }
+   document.onmouseup = function(e){
+    dragValue = null
+   }
+   document.onmousemove = function(e){
+    var x = e.pageX
+    var y = e.pageY
+
+    dragValue.style.left = x + 'px'
+    dragValue.style.top = y + 'px'
+   }
+</script>
+</body>
+</html>
