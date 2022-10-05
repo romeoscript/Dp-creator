@@ -105,29 +105,28 @@ index page styles
 .quick-nav-links {
   text-align: center;
 }
-.quick-nav-links .nav-container img{
+.quick-nav-links .nav-container img {
   width: 10%;
   margin: auto;
   display: block;
 }
-.hoverable-content{
+.hoverable-content {
   position: absolute;
   bottom: 2%;
   width: 100%;
   text-align: center;
 }
-.hoverable-content h2{
- color: #FFE8FF;
-
+.hoverable-content h2 {
+  color: #ffe8ff;
 }
-.hoverable-content span{
- color: #FFE8FF;
-margin: 5px;
+.hoverable-content span {
+  color: #ffe8ff;
+  margin: 5px;
   font-size: 12px;
 }
 .quick-nav-links .nav-container ul li {
   margin-bottom: 1rem;
-  
+
   justify-content: center;
   align-items: center;
 }
@@ -194,14 +193,39 @@ flex:50%;
   flex-basis: 22%;
   margin-bottom: 1rem;
 }
-.create-section .create-body .box img{
+.create-section .create-body .box img {
   width: 20%;
 }
-.create-section .create-body .box h2{
-  color: #DA00DE;
+.create-section .create-body .box h2 {
+  color: #da00de;
 }
-.create-section .create-body .box p{
-  color: #470D48;
+.floatin__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.floatin__div h1 {
+  color: #da00de;
+  text-transform: uppercase;
+  text-align: center;
+}
+.floating__div-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4%;
+  
+}
+.floating__div-content>div{
+  height: 250px;
+  border-radius: 10px;
+}
+.floatin__div img{
+  height: 100%;
+  object-fit: fill;
+}
+.create-section .create-body .box p {
+  color: #470d48;
 }
 .create-section .create-footer {
   text-align: initial;
@@ -662,13 +686,13 @@ dashboard-container
   transform: translate(-50% -50%);
 }
 .image__inspect img:last-child {
-    width: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.dragable__display{
+.dragable__display {
   width: 100px;
   height: 100px;
   /* background-color: transparent; */
@@ -850,6 +874,5 @@ dashboard-container
   .flier__container {
     width: 100%;
     height: 500px;
-    
   }
 }
