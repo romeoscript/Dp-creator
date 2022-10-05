@@ -105,8 +105,31 @@ index page styles
 .quick-nav-links {
   text-align: center;
 }
+.quick-nav-links .nav-container img{
+  width: 10%;
+  margin: auto;
+  display: block;
+}
+.hoverable-content{
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  text-align: center;
+}
+.hoverable-content h2{
+ color: #FFE8FF;
+
+}
+.hoverable-content span{
+ color: #FFE8FF;
+margin: 5px;
+  font-size: 12px;
+}
 .quick-nav-links .nav-container ul li {
   margin-bottom: 1rem;
+  
+  justify-content: center;
+  align-items: center;
 }
 .quick-nav-links a {
   color: #99509a;
@@ -161,13 +184,24 @@ flex:50%;
   background-image: url(../images/bg-image.png);
 }
 .create-section .create-body .box {
-  height: 150px;
-  background: rgba(209, 0, 214, 0.61);
-  -moz-box-shadow: 0px 4px 29px #eeceef;
+  /* height: 150px; */
+  min-height: 220px;
+  /* background: rgba(209, 0, 214, 0.61); */
+  /* -moz-box-shadow: 0px 4px 29px #eeceef;
   -webkit-box-shadow: 0px 4px 29px #eeceef;
-  box-shadow: 0px 4px 29px #eeceef;
+  box-shadow: 0px 4px 29px #eeceef; */
+  text-align: center;
   flex-basis: 22%;
   margin-bottom: 1rem;
+}
+.create-section .create-body .box img{
+  width: 20%;
+}
+.create-section .create-body .box h2{
+  color: #DA00DE;
+}
+.create-section .create-body .box p{
+  color: #470D48;
 }
 .create-section .create-footer {
   text-align: initial;
@@ -199,6 +233,7 @@ gallery container image
 ********************* */
 .img-container {
   height: 100%;
+  position: relative;
 }
 .img-container img {
   height: 100%;
@@ -721,6 +756,9 @@ dashboard-container
 }
 
 @media (max-width: 550px) {
+  .gallery-wrapper {
+    display: block;
+  }
   .section-wrapper__grid2 .section__grid-flex1:first-child {
     flex: 1;
     padding: 1rem;
