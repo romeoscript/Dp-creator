@@ -893,4 +893,24 @@ dashboard-container
     width: 100%;
     height: 500px;
   }
+  .floatin__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    padding: 0;
+}
+.floating__condition {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+.floating__div-content > div {
+  /* height: 250px; */
+  flex-basis: auto;
+  height: 150px;
+  border-radius: 10px;
+  margin: 10px 0;
 }
