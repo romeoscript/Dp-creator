@@ -191,3 +191,6 @@ canvas styles
         width: 50%;
     }
 }
+.opendiv{
+  visibility: hidden!important;
+}

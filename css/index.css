@@ -206,10 +206,8 @@ flex:50%;
   align-items: center;
   position: absolute;
   top: 35%;
-  
-  
 }
-.floating__condition{
+.floating__condition {
   width: 90%;
   background-color: white;
   /* border: 1px solid red; */
@@ -722,6 +720,10 @@ dashboard-container
   border-radius: 50%;
   visibility: hidden;
 }
+
+.browse__page{
+  height: 50vh;
+}
 /*************************
  Tablet Device
 **************************/
@@ -772,6 +774,14 @@ dashboard-container
   }
 }
 @media (max-width: 1050px) {
+  .floatin__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+}
   .section-wrapper__grid1 {
     display: none;
   }
@@ -901,16 +911,20 @@ dashboard-container
     position: absolute;
     top: 25%;
     padding: 0;
-}
-.floating__condition {
-  width: 100%;
-  background-color: white;
-  padding: 10px;
-}
-.floating__div-content > div {
-  /* height: 250px; */
-  flex-basis: auto;
-  height: 150px;
-  border-radius: 10px;
-  margin: 10px 0;
+  }
+  .floating__condition {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+  }
+  .floating__div-content > div {
+    /* height: 250px; */
+    flex-basis: auto;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  .empty{
+    height: 750px;
+  }
 }
