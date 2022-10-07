@@ -1041,4 +1041,7 @@ dashboard-container
   .visitor__empty{
     height: 550px;
   }
+  .generate{
+    width: 60%;
+  }
 }
