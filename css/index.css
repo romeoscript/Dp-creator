@@ -426,6 +426,11 @@ dashboard-container
 
   border-radius: 4px;
 }
+.dp__container-box h2{
+  font-size: 100%;
+  text-align: center;
+  color: white;
+}
 .dp__container-mainbox {
   position: relative;
   margin: 1rem 0;
