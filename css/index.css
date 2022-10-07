@@ -206,6 +206,31 @@ flex:50%;
   align-items: center;
   position: absolute;
   top: 35%;
+  width: 100%;
+}
+.iconss{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: #da00de;
+}
+.iconss span{
+  margin: 10px;
+}
+
+.peter__obi-img{
+  height: 500px;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.peter__obi-img img{
+  height: auto!important;
+  width: auto;
+  max-width: 100%;
+  max-height:100% ;
 }
 .floating__condition {
   width: 90%;
@@ -934,8 +959,14 @@ dashboard-container
     align-items: center;
     position: absolute;
     top: 25%;
+    
     padding: 0;
   }
+  /* #visitor{
+    position: relative!important;
+    top: 0;
+    left: 0;
+  } */
   .floating__condition {
     width: 100%;
     background-color: white;
