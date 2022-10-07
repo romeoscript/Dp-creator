@@ -255,7 +255,31 @@ flex:50%;
   height: 150px;
 }
 .empty {
-  height: 700px;
+  height: 1000px;
+}
+
+.floating__condition-divs{
+  position: relative;
+}
+.floating__items{
+  position: absolute; 
+  font-size: 16px;
+  bottom: 2%;
+  left: 4%;
+  z-index: 8;
+}
+.floating__file h2{
+  color: white;
+  font-size: 100%;
+}
+.floating__file{
+  text-align: center;
+  /* width: 100%; */
+}
+.floating__file span{
+  color: white;
+  font-size: 70%;
+  margin: auto;
 }
 /*************************
   gallery wrapper
@@ -925,6 +949,6 @@ dashboard-container
     margin: 10px 0;
   }
   .empty{
-    height: 750px;
+    height: 950px;
   }
 }
