@@ -61,3 +61,17 @@ uplaod.oninput = ({target})=>{
 function uploadFile(name){
     let xhr = newX
 }
+
+//switch to the circle 
+
+const circle = document.getElementById('circler')
+const square = document.getElementById('squarely')
+const dragableDisplay = document.querySelector('.dragable__display')
+console.log('romeo')
+circle.addEventListener('click',()=>{
+    dragableDisplay.style.borderRadius = '50%'
+})
+square.addEventListener('click',()=>{
+    dragableDisplay.style.borderRadius = '0px'
+    console.log(circle)
+})

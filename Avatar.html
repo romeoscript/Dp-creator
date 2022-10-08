@@ -85,8 +85,8 @@
         </ol>
            <div class="avatar__shape">
             <p>choose shape of avatar</p>
-            <p>circle <span></span></p>
-            <p>sqare <span></span></p>
+            <p>square <span id="squarely" ></span></p>
+            <p>circle <span id="circler"></span></p>
            </div>
           <div class="flier__container">
             <div class="image_preview dragable" >
@@ -216,6 +216,20 @@ const displayDragable = document.querySelector('.dragable__display')
   drageableDisc.style.visibility = 'hidden'
   displayDragable.style.visibility = 'visible'
  })
+
+ //switch to the circle 
+
+const circlic = document.getElementById('circler')
+const squarely = document.getElementById('squarely')
+const dragableDisplay1 = document.querySelector('.dragable__display')
+console.log('romeo')
+circlic.addEventListener('click',()=>{
+    dragableDisplay1.style.borderRadius = '50%'
+})
+squarely.addEventListener('click',()=>{
+    dragableDisplay1.style.borderRadius = '0px'
+  
+})
 </script>
 </body>
 </html>

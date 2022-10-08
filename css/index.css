@@ -782,10 +782,7 @@ dashboard-container
   align-items: center;
   justify-content: center;
 }
-.avatar__shape p span {
-  width: 20px;
-  height: 20px;
-
+.avatar__shape p:last-child span {
   border-radius: 50%;
   display: inline-block;
   border: 1px solid white;
@@ -940,6 +937,13 @@ dashboard-container
 }
 
 @media (max-width: 550px) {
+  .avatar__shape p span {
+    width: 12px;
+    height: 12px;
+  }
+  .avatar__shape p {
+    font-size: 13px;
+  }
   .peter__obi-img section {
     /* border: 1px solid green; */
     width: 70%;
