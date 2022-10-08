@@ -620,6 +620,9 @@ dashboard-container
   background: rgba(217, 217, 217, 0.34);
   border-radius: 5px 0px 0px 5px;
 }
+.li_active{
+  background: rgba(217, 217, 217, 0.34);
+}
 .create__dp-container form label {
   font-family: "Poppins";
   font-style: normal;
